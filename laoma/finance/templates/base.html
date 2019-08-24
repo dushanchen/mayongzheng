@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="zh-CN"><head>
 <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-transform">
@@ -12,9 +13,7 @@
 <link rel="stylesheet" type="text/css" href="/static/laoma/css/style.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/static/laoma/css/fontello.css">
 <link rel="stylesheet" type="text/css" href="/static/laoma/css/animate.css">
-<link rel="stylesheet" type="text/css" href="/static/laoma/css/prism.css">
-
-<link rel="icon" href="https://www.txzlx.com/zb_users/upload/2019/04/201904081554708820763771.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="/static/laoma/css/prism.css"> 
 
 <script src="https://zz.bdstatic.com/linksubmit/push.js"></script>
 <script src="https://zz.bdstatic.com/linksubmit/push.js"></script>
@@ -32,13 +31,13 @@
 <script>new WOW().init();</script>
  <script type="text/javascript" src="https://www.txzlx.com/zb_users/theme/zbsixth/script/leonhere.js"></script>
 <script src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=435030"></script></head>
-<body onmouseup="document.selection.empty()" onbeforecopy="return false" oncopy="document.selection.empty()" onselect="document.selection.empty()" onselectstart="return false" ondragstart="return false" oncontextmenu="return false" topmargin="0" leftmargin="0">
+<body  onbeforecopy="return false" oncopy="document.selection.empty()" onselectstart="return false" ondragstart="return false" oncontextmenu="return false" topmargin="0" leftmargin="0">
 <header class="header">
 	<div class="inner">
 		<div class="logo animated fadeInLeft">
-					<a href="https://www.txzlx.com/" title="信托定融网"><img src="https://www.txzlx.com/zb_users/upload/2019/04/201904071554627407227046.png" alt="信托定融网"></a>
+					<a href="" title="信托定融网"><img src="{{ config.logo.url }}" alt="信托定融网" /></a>
 		</div>
-		<div class="top-other">
+	<!-- 	<div class="top-other">
 			<ul>
 				<li><i class="icon-menu"></i></li>
 				<li><i class="icon-search"></i></li>
@@ -58,16 +57,16 @@
 				</li>
 				<div class="clear"></div>
 			</ul>
-		</div>
+		</div> -->
 		<nav class="nav">			
 			<div class="menu">
 				<ul>
-					<li id="nvabar-item-index" menu='index'><a href="https://www.txzlx.com/">首页</a></li>
-					<li id="navbar-category-2" menu='xintuo'><a href="https://www.txzlx.com/?cate=2">信托</a></li>
-					<li id="navbar-category-1" menu='dingrong'><a href="https://www.txzlx.com/?cate=1">定融工具</a></li>
-					<li id="navbar-category-3" menu='news'><a href="https://www.txzlx.com/?cate=3">资讯分享</a></li>
-					<li id="navbar-page-8" menu='jiaoyi'><a href="https://www.txzlx.com/?id=8">交易流程</a></li>
-					<li id="navbar-category-5" menu='touzi'><a href="https://www.txzlx.com/?cate=5">投资学院</a></li>	
+					<li id="nvabar-item-index" menu='首页'><a href="/index/">首页</a></li>
+					<li id="navbar-category-2" menu='信托'><a href="/xintuo/">信托</a></li>
+					<li id="navbar-category-1" menu='定融工具'><a href="/dingrong/">定融工具</a></li>
+					<li id="navbar-category-3" menu='行业资讯'><a href="/news/">行业资讯</a></li>
+					<!-- <li id="navbar-page-8" menu='jiaoyi'><a href="https://www.txzlx.com/?id=8">交易流程</a></li>
+					<li id="navbar-category-5" menu='touzi'><a href="https://www.txzlx.com/?cate=5">投资学院</a></li>	 -->
 				</ul>				
 			</div>			
 		</nav>		
@@ -103,10 +102,10 @@
 		<h3>关注我们</h3>
 	</div>
 			<div class="textwidget">
-		<img src="http://i2.tiimg.com/665348/6c5c86512ea949ae.jpg" alt="扫描二维码关注微信">
+		<img src="{{ config.ma1.url }}" alt="扫描二维码关注微信">
 		<p></p>
 		<p>扫描二维码直接添加微信</p>
-			<img src="http://i2.tiimg.com/665348/6c5c86512ea949ae.jpg" alt="扫描二维码关注微信">
+			<img src="{{ config.ma2.url }}" alt="扫描二维码关注微信">
 		<p></p>
 		<p>扫描二维码直接添加微信</p>	</div>
 	</section>
@@ -115,85 +114,46 @@
 </aside></div>
 <div class="inner friendlinks wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
 	<div class="title">
-		友情链接<span>申请要求：PR≥2，BR≥2，IP≥4000，同属互联网资讯类网站，并内容充实，无作弊现象。</span> 	</div>
-	<ul>
-		<li><a href="https://www.txzlx.com/?cate=2" target="_blank" title="中信信托">中信信托</a></li>
-		<li><a href="https://www.txzlx.com/?cate=2" target="_blank" title="百瑞信托">百瑞信托</a></li><li>
-			<a href="https://www.txzlx.com/?cate=2" target="_blank" title="国民信托">国民信托</a></li><li>
-			<a href="https://www.txzlx.com/?cate=2" target="_blank" title="光大信托">光大信托</a></li><li><a href="https://www.txzlx.com/?cate=2" target="_blank" title="湖南信托">湖南信托</a></li><li><a href="https://www.txzlx.com/?cate=2" title="华澳信托">华澳信托</a></li><li><a href="https://www.txzlx.com/?cate=2" target="_blank" title="四川信托">四川信托</a></li><li><a href="https://www.txzlx.com/?cate=2" target="_blank" title="大业信托">大业信托</a></li><li><a href="https://www.txzlx.com/?cate=2" target="_blank" title="英大信托">英大信托</a></li>	</ul>
-</div>
-<div class="fixed-widget">
-	<ul>		
-		<li><i class="icon-up-open"></i></li>
+		<ul>
+		<li style='font-size: 14px'>友情链接:</li>
+		{% for i in links %}
+		<li><a href="{{ i.url }}" target="_blank" title="{{i.name}}">{{ i.name }}</a></li>
+		{% endfor %}
 	</ul>
+		</span> 	
+	</div>
+</div>
+ <style type="text/css">
+ 	#footer{
+ 		background: #313131;
+ 		color:#aaa;
+ 		padding: 20px;
+ 	}
+ 	#footer p{
+ 		color:#aaa;
+ 		text-align: center;
+ 		font-size: 14px;
+ 		margin: 3px;
+ 	}
+ 	#footer a{
+ 		color:#aaa;
+ 		text-align: center;
+ 		font-size: 14px;
+ 	}
+ </style>
+<div id="footer" >
+	<p>
+		<a rel="nofollow"  target="_blank">联系方式: {{ config.phone | default:'159007xxx'}}</a> 
+	</p>
+	<p>
+		<a rel="nofollow"  target="_blank" >
+		<!-- <img src="//icws.jb51.net/images/ghs.png"> -->
+		 {{ config.beian |default:'' }} </a>
+	</p>
+	<p>
+		{{ config.version | default:'版权所有 &copy; 2019  老马基金.' }}
+	</p>
 </div>
 
-<footer class="footer">
-	<div class="inner">
-		<div class="copyright">
-			
-			<script>
-				var _hmt = _hmt || [];
-				(function() {  
-				var hm = document.createElement("script");  
-				hm.src = "https://hm.baidu.com/hm.js?872476af5a1ae96cd64c8157e2c6c374";  
-				var s = document.getElementsByTagName("script")[0];   
-				s.parentNode.insertBefore(hm, s);})();
-			</script>
-
-			<a href="http://www.zblogcn.com/" title="RainbowSoft Z-BlogPHP" target="_blank">Z-BlogPHP</a>		</div>
-		<div class="other">
-<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?872476af5a1ae96cd64c8157e2c6c374";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-</script>
-<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?24122cf6773cac8ac829b56c703305bc";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-</script>
-<script>
-	(function(){
-	    var bp = document.createElement('script');
-	    var curProtocol = window.location.protocol.split(':')[0];
-	    if (curProtocol === 'https') {
-	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-	    }
-	    else {
-	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-	    }
-	    var s = document.getElementsByTagName("script")[0];
-	    s.parentNode.insertBefore(bp, s);
-	})();
-</script>
-<script>
-	(function(){
-	    var bp = document.createElement('script');
-	    var curProtocol = window.location.protocol.split(':')[0];
-	    if (curProtocol === 'https') {
-	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-	    }
-	    else {
-	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-	    }
-	    var s = document.getElementsByTagName("script")[0];
-	    s.parentNode.insertBefore(bp, s);
-	})();
-
-	$(document).ready(function(){
-		$('li[menu={{ menu }}]').addClass('on')
-	})
-</script> / 					</div>
-	</div>
-</footer>
 
 </body></html>

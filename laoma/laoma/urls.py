@@ -26,6 +26,14 @@ urlpatterns = [
     path('ueditor/', include('DjangoUeditor.urls')),
 
     path('', f.index),
+    path('index/', f.index),
+    path('xintuo/', f.xintuo),
+    path('dingrong/', f.dingrong),
+    path('news/', f.news),
+    path('article/<int:id>/', f.article),
+    path('article/<int:id>/', f.article),
+    path('article/<int:id>/', f.article),
+
 ] 
 
 if settings.DEBUG:

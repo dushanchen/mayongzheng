@@ -1,0 +1,24 @@
+<div class="pagenavi">
+	<a page='1'><span class="page">‹‹</span></a>
+    {% for i in articles.paginator.page_range %}
+	<a href="#" page='{{i}}'>
+        <span class="page {% if page == i %} now-page {% endif %}">{{ i }}</span>
+    </a>
+    {% endfor %}
+</div>
+<form id='pageform' action='' method="post">
+    {% csrf_token %}
+    <input type="hidden" id='page' name='page' value='{{page}}'>
+</form>
+{% block js %}
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.pagenavi a').click(function(){
+	        $('#page').val($(this).attr('page'))
+	        $('#pageform').submit()
+	    })
+	})
+    
+</script>
+{% endblock %}
