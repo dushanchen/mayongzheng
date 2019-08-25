@@ -66,13 +66,13 @@ class Config(models.Model):
     class Meta:
         verbose_name = verbose_name_plural = '配置'
 
-    logo = models.ImageField(upload_to='config', null=True, verbose_name='顶部logo')
-    ma1 = models.ImageField(upload_to='config', null=True, verbose_name='微信二维码1')
-    ma2 = models.ImageField(upload_to='config', null=True, verbose_name='微信二维码2')
+    logo = models.ImageField(upload_to='config', null=True, blank=True, verbose_name='顶部logo')
+    ma1 = models.ImageField(upload_to='config', null=True, blank=True,verbose_name='微信二维码1')
+    ma2 = models.ImageField(upload_to='config', null=True, blank=True,verbose_name='微信二维码2')
 
-    version = models.CharField(max_length=30, null=True, verbose_name='页面底部的版权')
-    beian = models.CharField(max_length=30, null=True, verbose_name='页面底部的备案号')
-    phone = models.CharField(max_length=30, null=True, verbose_name='页面底部的联系电话')
+    version = models.CharField(max_length=30, null=True, blank=True,verbose_name='页面底部的版权')
+    beian = models.CharField(max_length=30, null=True,blank=True, verbose_name='页面底部的备案号')
+    phone = models.CharField(max_length=30, null=True,blank=True, verbose_name='页面底部的联系电话')
 
 
 class Link(models.Model):

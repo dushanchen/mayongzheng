@@ -24,7 +24,7 @@ def index(request):
 
     articles = Article.objects.all().order_by('-create_time')  # 最新文章
 
-    paginator = Paginator(articles, 1) 
+    paginator = Paginator(articles, 10) 
 
     try:
         articles = paginator.page(page)
@@ -56,7 +56,7 @@ def xintuo(request):
     
     articles = Article.objects.filter(type=0).order_by('top','-create_time')  # 最新文章
 
-    paginator = Paginator(articles, 1) 
+    paginator = Paginator(articles, 10) 
 
     try:
         articles = paginator.page(page)
