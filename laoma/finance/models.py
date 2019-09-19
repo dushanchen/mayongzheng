@@ -18,7 +18,7 @@ class Article(models.Model):
     user = models.CharField(max_length=100,  verbose_name='作者', null=True)
     cover = models.ImageField(upload_to='cover', null=True, verbose_name='封面')
     read = models.IntegerField(default=0, verbose_name='阅读量')
-    comment_num = models.IntegerField(default=0, verbose_name='阅读量')
+    comment_num = models.IntegerField(default=0, verbose_name='评论量')
 
     type = models.IntegerField(default=0, choices=[(0, '信托文章'),(1, '定容工具'),(2, '行业资讯')], verbose_name='文章类型')
     top = models.IntegerField(default=10000, verbose_name='置顶参数(越小越靠顶,10000表示未发布, 要发布就改小)')
