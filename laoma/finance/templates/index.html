@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
+ 
+
 <div class="blank"></div>
 <div class="inner container">
 	<main class="main">
@@ -9,7 +11,7 @@
 			<div class="flex-viewport" style="overflow: hidden; position: relative;">
 				<ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-1230px, 0px, 0px);">
 					{% for i in scroll_top %}
-						<li class="clone" aria-hidden="true" style="width: 410px; margin-right: 0px; float: left; display: block;">
+						<li class="{% if forloop.counter0 == 0 %}clone{% endif %}" aria-hidden="true" style="width: 410px; margin-right: 0px; float: left; display: block;">
 							<a href="/article/{{ i.id }}/" target="_blank">
 							<img src="{{ i.cover.url }}" alt="{{ i.title }}" draggable="false">
 							<p class="flex-caption">{{ i.title }}</p>
