@@ -30,6 +30,8 @@ class Article(models.Model):
     content = UEditorField(width=1200, height=1200, toolbars="full", imagePath="images/", filePath="files/",\
          upload_settings={"imageMaxSize":120400000}, settings={}, verbose_name='文章内容(备注:按钮上传图片)', null=True)
 
+    abstract = models.CharField(max_length=300, default='', verbose_name='概要(用于搜索引擎识别,300字以内)')
+
     def __str__(self):
         return self.title
 
