@@ -6,7 +6,7 @@ from .models import *
 
 
 def index(request):
-    ctx = {'menu': '首页'}
+    ctx = {'menu': '首页', 'title': '信托,定容-信托服务网'}
 
     ctx['links'] = Link.objects.all()
     ctx['config'] = Config.objects.all().first()
@@ -38,7 +38,7 @@ def index(request):
 
 
 def xintuo(request):
-    ctx = {'menu': '信托'}
+    ctx = {'menu': '信托', 'title': '信托产品-信托服务网'}
 
     ctx['links'] = Link.objects.all()
     ctx['config'] = Config.objects.all().first()
@@ -69,7 +69,7 @@ def xintuo(request):
 
 
 def dingrong(request):
-    ctx = {'menu': '定容工具'}
+    ctx = {'menu': '定容工具', 'title': '定融产品-信托服务网'}
 
     ctx['links'] = Link.objects.all()
     ctx['config'] = Config.objects.all().first()
@@ -98,7 +98,7 @@ def dingrong(request):
 
 
 def news(request):
-    ctx = {'menu': '行业资讯'}
+    ctx = {'menu': '行业资讯', 'title': '信托资讯-信托服务网'}
 
 
     ctx['links'] = Link.objects.all()
@@ -128,7 +128,7 @@ def news(request):
 
 
 def article(request, id):
-    ctx = {}
+    ctx = {'title': '信托,定融-信托服务网'}
 
     ctx['links'] = Link.objects.all()
     ctx['config'] = Config.objects.all().first()
