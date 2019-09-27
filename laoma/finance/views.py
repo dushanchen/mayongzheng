@@ -136,6 +136,7 @@ def article(request, id):
 
     ctx['a'] = a = Article.objects.filter(id=id).first()
     ctx['abstract'] = a.abstract
+    ctx['keywords'] = a.keywords
     if a: 
         ctx['menu'] = a.get_type_display()
     print(ctx['menu'])
